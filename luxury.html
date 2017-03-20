@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Luxury Cars</title>
+		<link type = "text/css" rel = "stylesheet" href = "styles/luxury.css">
+		<link type = "text/css" rel = "stylesheet" href = "styles/masterblueprint.css">
+		<link type = "text/css" rel = "stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body id = "content">
+		<header id = "main_header">
+			<h1 id = "site_header"><span id = "auto">Automotive</span><span id = "master">Masterpieces</span></h1>
+			<nav id = "nav_bar">
+					<a href = "index.html" class = "nav_links" >Home</a>
+					<a href = "performance.html" class = "nav_links" >Performance</a>
+					<a href = "luxury.html" class = "nav_links" id = "active">Luxury</a>
+					<a href = "pioneers.html" class = "nav_links">Pioneers</a>
+				</ul>
+			</nav>
+		</header>
+		<main id = "luxury_main">
+			<section id = "luxury_section">
+				<a id = "bentley_link" href = "automotive.html" onclick = "return setId(7)">
+					<article class = "luxury_articles" id = "Bentley">
+						<img style = "background-color: #222" class = "logo_img" src = "images/logos/bentley_logo.png" alt = "Bentley Logo"/>
+						<div id = "Bentley_header" class = "best_car">
+							<h2>Bentley Continental GT</h2>
+						</div>
+						<div id = "bentley_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 188 mph</li>
+								<li>Horsepower: 521 bhp</li>
+								<li>Price: $257,254 USD</li>
+							</ul>
+						</div>
+					</article>
+				</a>
+				
+				<a id = "bmw_link" href = "automotive.html" onclick = "return setId(8)">
+					<article class = "luxury_articles" id = "BMW">
+						<img  class = "logo_img" src = "images/logos/bmw_logo.jpg" alt = "bmw_logo"/>
+						<div id = "BMW_header" class = "best_car">
+							<h2>BMW 7 Series</h2>
+						</div>
+						<div id = "BMW_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 155 mph</li>
+								<li>Horsepower: 320 bhp</li>
+								<li>Price: $83,000 USD</li>
+							</ul>
+						</div>
+					</article>
+				</a>
+				
+				<a id = "jaguar_link" href = "automotive.html" onclick = "return setId(9)">
+					<article class = "luxury_articles" id = "Jaguar">
+						<img  class = "logo_img" src = "images/logos/jaguar_logo.png" alt = "jaguar_logo"/>
+						<div id = "Jaguar_header" class = "best_car">
+							<h2>Jaguar XJ</h2>
+						</div>
+						<div id = "jaguar_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 124 mph</li>
+								<li>Horsepower: 340 bhp</li>
+								<li>Price: $75,000 USD</li>
+							</ul>
+						</div>
+					</article>
+				</a>
+				
+				<a id = "mercedes_link" href = "automotive.html" onclick = "return setId(10)">
+					<article class = "luxury_articles" id = "Mercedes">
+						<img  class = "logo_img" src = "images/logos/mercedes_logo.png" alt = "mercedes_logo"/>
+						<div id = "Mercedes_header" class = "best_car">
+							<h2>Mercedes-Benz S Class</h2>
+						</div>
+						<div id = "Mercedes_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 132 mph</li>
+								<li>Horsepower: 449 bhp</li>
+								<li>Price: $96,000 USD</li>
+							</ul>
+						</div>
+					</article>
+				</a>
+				
+				<a id = "rolls_royce_link" href = "automotive.html" onclick = "return setId(11)">	
+					<article class = "luxury_articles" id = "Rolls_Royce">
+						<img  class = "logo_img" src = "images/logos/rolls_royce_logo_2.jpg" alt = "rolls_royce_logo"/>
+						<div id = "Rolls_Royce_header" class = "best_car">
+								<h2>Rolls Royce Phantom</h2>
+							</div>
+						<div id = "rolls_royce_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 155 mph</li>
+								<li>Horsepower: 453 bhp</li>
+								<li>Price: $420,000 USD</li>
+							</ul>
+						</div>
+					</article>
+				</a>
+				
+				<a id = "tesla_link" href = "automotive.html" onclick = "return setId(12)">
+					<article class = "luxury_articles" id = "Tesla">
+						<img  class = "logo_img" src = "images/logos/tesla_logo.png" alt = "tesla_logo"/>
+						<div id = "Tesla_header" class = "best_car">
+								<h2>Tesla Model S</h2>
+							</div>
+						<div id = "tesla_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 155 mph</li>
+								<li>Horsepower: 532 bhp</li>
+								<li>Price: $67,000 USD</li>
+							</ul>
+						</div>
+					</article>
+				</a>
+			</section>
+		</main>
+		<footer id = "footer">
+			<p class = "subscribe" id = "subscribe_promotion">Subscribe to our weekly newsletter</p>
+			<a class = "subscribe" href = "subscribe.html" id = "subscribe_link">Subscribe</a>
+			<p id = "copyright_info">&copy Copyright 2016 Akshay Patel N01184843</p>
+			
+			<div id = "social_media_links">
+				<a id = "facebook" target ="_blank" href = "http://www.facebook.com" class="fa fa-facebook-square fa-2x" aria-hidden="true"></a>
+				<a id = "twitter" target ="_blank" href = "http://www.twitter.com" class="fa fa-twitter fa-2x" aria-hidden="true"></a>
+			</div>
+		</footer>
+		<script src = "scripts/luxury.js" ></script>
+		<script src = "scripts/automotive.js"></script>
+	</body>
+</html>

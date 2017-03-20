@@ -1,0 +1,62 @@
+/*CONTENT CODE*/
+
+#performance_main{
+	width: inherit;
+}
+#performance_section{
+	width: 90%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.performance_articles{
+	position: relative;
+	width: 45%;
+	margin: 2%;
+	display: inline-block;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.performance_articles:hover .details, .performance_articles:hover .best_car{
+	display: block;
+}
+.logo_img{
+	width: 100%;
+	height: 100%;
+}
+.best_car{
+	font-size: 1.3vw;
+	line-height: 7em;
+	text-align: center;
+	font-family: Century Gothic;
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 25%;
+	background-color: rgba(85,85,85,0.3);
+	color: white;
+}
+.details{
+	font-size: 1.15vw;
+	text-align: left;
+	font-family: Century Gothic;
+	display: none;
+	position: absolute;
+	bottom: 1.5%;
+	left: 0%;
+	width: 100%;
+	height: 25%;
+	background-color: rgba(85,85,85,0.3);
+	color: white;
+}
+.model_specs{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	list-style-type: none;
+}
+

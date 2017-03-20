@@ -1,0 +1,67 @@
+
+#pioneers_main{
+	width: inherit;
+}
+#pioneers_section{
+	width: inherit;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.pioneers_articles{
+	position: relative;
+	margin: 20px;
+	display: inline-block;
+	width: 30%;
+	transition: width .5s;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.pioneers_articles:hover{
+	width: 30.3%;
+}
+.founder_img{
+	width: 100%;
+	background: #AAA
+}
+
+.pioneers_articles:hover>.pioneers, .pioneers_articles:hover>.details{
+	display: block;
+}
+.pioneers{
+	font-size: 1.3vw;
+	line-height: 7em;
+	text-align: center;
+	font-family: Century Gothic;
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 25%;
+	background-color: rgba(85,85,85,0.3);
+	color: white;
+}
+.details{
+	font-size: 1.15vw;
+	text-align: left;
+	font-family: Century Gothic;
+	display: none;
+	position: absolute;
+	bottom: 1.5%;
+	left: 0%;
+	width: 100%;
+	height: 25%;
+	background-color: rgba(85,85,85,0.3);
+	color: white;
+}
+.details>p{
+	position: relative;
+	left: 5px;
+}
+.details> blockquote{
+	text-align: center;
+	position: relative;
+	top: 10px;
+}

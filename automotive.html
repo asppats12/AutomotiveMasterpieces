@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type = "text/css" rel = "stylesheet" href = "styles/automotive.css">	
+		<link type = "text/css" rel = "stylesheet" href = "styles/masterblueprint.css">
+		<link type = "text/css" rel = "stylesheet" href = "font-awesome-4.7.0/css/font-awesome.min.css">
+			
+		<title></title>
+	</head>
+	
+	<body onload = "return load_page()" id = "content">
+		<header id = "main_header">
+			<h1 id = "site_header"><span id = "auto">Automotive</span><span id = "master">Masterpieces</span></h1>
+			<nav id = "nav_bar">
+					<a href = "index.html" class = "nav_links">Home</a>
+					<a href = "performance.html" class = "nav_links">Performance</a>
+					<a href = "luxury.html" class = "nav_links">Luxury</a>
+					<a href = "pioneers.html" class = "nav_links">Pioneers</a>
+				</ul>
+			</nav>
+		</header>
+		<main id = "automotive_content">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img id = "img1" src="" style="width:100%">
+					<figcaption class="text">Front Exterior</figcaption>
+				</div>
+
+				<div class="mySlides fade">
+					<img id = "img2" src="" style="width:100%">
+					<figcaption class="text">Rear Exterior</figcaption>
+				</div>
+
+				<div class="mySlides fade">
+					<img id = "img3" src="" style="width:100%">
+					<figcaption class="text">Interior</figcaption>
+			    </div>
+
+			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			
+			
+			<h2 id = "car"></h2>
+			
+			<p id = "intro"></p>
+			
+			<p id = "second"></p>
+		
+			<p id = "third"></p>
+			
+			<div id = "video_container"><iframe id = "video" src="" frameborder="0" allowfullscreen></iframe></div>
+			
+			<table id = "specs" width = "500">
+				<tr>
+					<th colspan = "2">Technical Details</th>
+				</tr>
+				<tr>
+					<td>Horsepower</td>
+					<td id = "horsepower"></td>
+				</tr>
+				<tr>
+					<td>Acceleration</td>
+					<td id = "acceleration"></td>
+				</tr>
+				<tr>
+					<td>Top Speed</td>
+					<td id = "topspeed"></td>
+				</tr>
+				<tr>
+					<td>Price</td>
+					<td id = "price"></td>
+				</tr>
+			</table>
+		</main>
+		<footer id = "footer">
+			<p class = "subscribe" id = "subscribe_promotion">Subscribe to our weekly newsletter</p>
+			<a class = "subscribe" href = "subscribe.html" id = "subscribe_link">Subscribe</a>
+			<p id = "copyright_info">&copy Copyright 2016 Akshay Patel N01184843</p>
+			
+			<div id = "social_media_links">
+				<a id = "facebook" target ="_blank" href = "http://www.facebook.com" class="fa fa-facebook-square fa-2x" aria-hidden="true"></a>
+				<a id = "twitter" target ="_blank" href = "http://www.twitter.com" class="fa fa-twitter fa-2x" aria-hidden="true"></a>
+			</div>
+		</footer>
+		<script type = "text/javascript" src = "scripts/automotive.js"></script>
+	</body>
+</html>

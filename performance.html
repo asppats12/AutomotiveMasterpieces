@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Performance Cars</title>
+		<link type = "text/css" rel = "stylesheet" href = "styles/performance.css">
+		<link type = "text/css" rel = "stylesheet" href = "styles/masterblueprint.css">
+		<link type = "text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body id = "content" >
+		<header id = "main_header">
+			<h1 id = "site_header"><span id = "auto">Automotive</span><span id = "master">Masterpieces</span></h1>
+			<nav id = "nav_bar">
+					<a href = "index.html" class = "nav_links" >Home</a>
+					<a href = "performance.html" class = "nav_links" id = "active">Performance</a>
+					<a href = "luxury.html" class = "nav_links">Luxury</a>
+					<a href = "pioneers.html" class = "nav_links">Pioneers</a>
+				</ul>
+			</nav>
+		</header>
+		
+		<main id = "performance_main">
+			<section id = "performance_section">
+				<article class = "performance_articles" id = "Bugatti">
+					<a id = "bugatti_link" href = "automotive.html" onclick = "return setId(1)">
+						<img class = "logo_img" src = "images/logos/bugatti_logo_2.jpg" alt = "bugatti_logo"/>
+						<div id = "bugatti_header" class = "best_car">
+							<h2>Bugatti Veyron Super Sport</h2>
+						</div>
+						<div id = "bugatti_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 267 mph </li>
+								<li>Horsepower: 1200 bhp</li>
+								<li>Price: $2.4 Million USD</li>
+							</ul>
+						</div>
+					</a>
+				</article>
+				
+				<article class = "performance_articles" id = "Ferrari">
+					<a id = "ferrari_link" href = "automotive.html" onclick = "return setId(2)">
+						<img  class = "logo_img" src = "images/logos/ferrari_logo_2.jpg" alt = "ferrari_logo"/>
+						<div id = "ferrari_header" class = "best_car">
+							<h2>Ferrari Laferrari</h2>
+						</div>
+						<div id = "porsche_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 218 mph</li>
+								<li>Horsepower: 789 bhp</li>
+								<li>Price: $1.4 Million USD</li>
+							</ul>
+						</div>
+					</a>
+				</article>
+				
+				<article class = "performance_articles" id = "Koenigsegg">
+					<a id = "koenigsegg_link" href = "automotive.html" onclick = "return setId(3)">
+						<img class = "logo_img" src = "images/logos/koenigsegg_logo.jpg" alt = "koenigsegg_logo"/>
+						<div id = "koenigsegg_header" class = "best_car">
+							<h2>Koenigsegg Agera R</h2>
+						</div>
+						<div id = "koenig_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 267 mph</li>
+								<li>Horsepower: 1140 bhp</li>
+								<li>Price: $1.5 Million USD</li>
+							</ul>
+						</div>
+					</a>
+				</article>
+				
+				<article class = "performance_articles" id = "Lamborghini">
+					<a id = "lamborghini_link" href = "automotive.html" onclick = "return setId(4)">	
+						<img class = "logo_img" src = "images/logos/lamborghini_logo.jpg" alt = "lamborghini_logo"/>
+						<div id = "lamborghini_header" class = "best_car">
+							<h2>Lamborghini Aventador LP-750-4V</h2>
+						</div>
+						<div id = "lambo_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 217 mph</li>
+								<li>Horsepower: 740 bhp </li>
+								<li>Price: $402,000 USD</li>
+							</ul>
+						</div>
+					</a>
+				</article>
+				
+				<article class = "performance_articles" id = "Mclaren">
+					<a id = "mclaren_link" href = "automotive.html" onclick = "return setId(5)">
+						<img class = "logo_img" src = "images/logos/mclaren_logo.jpg" alt = "mclaren_logo"/>
+						<div id = "mclaren_header" class = "best_car">
+							<h2>Mclaren P1</h2>
+						</div>
+						<div id = "mclaren_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 249 mph</li>
+								<li>Horsepower: 904 bhp</li>
+								<li>Price: $1.3 Million USD</li>
+							</ul>
+						</div>
+					</a>
+				</article>
+				
+				<article class = "performance_articles" id = "Porsche">
+					<a id = "porsche_link" href = "automotive.html" onclick = "return setId(6)">
+						<img class = "logo_img" src = "images/logos/porsche_logo_2.jpg" alt = "porsche_logo"/>
+						<div id = "porsche_header" class = "best_car">
+							<h2>Porsche 918 Spyder</h2>
+						</div>
+						<div id = "porsche_info" class = "details">
+							<ul class = "model_specs">
+								<li>Top Speed: 218 mph</li>
+								<li>Horsepower: 887 bhp</li>
+								<li>Price: $887,000 USD</li>
+							</ul>
+						</div>
+					</a>
+				</article>
+				
+			</section>
+		</main>
+		
+		<footer id = "footer">
+			<p class = "subscribe" id = "subscribe_promotion">Subscribe to our weekly newsletter</p>
+			<a class = "subscribe" href = "subscribe.html" id = "subscribe_link">Subscribe</a>
+			<p id = "copyright_info">&copy Copyright 2016 Akshay Patel N01184843</p>
+			
+			<div id = "social_media_links">
+				<a id = "facebook" target ="_blank" href = "http://www.facebook.com" class="fa fa-facebook-square fa-2x" aria-hidden="true"></a>
+				<a id = "twitter" target ="_blank" href = "http://www.twitter.com" class="fa fa-twitter fa-2x" aria-hidden="true"></a>
+			</div>
+		</footer>
+		<script src = "scripts/performance.js"></script>
+		<script src = "scripts/automotive.js"></script>
+	</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Subscribe</title>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			body{
+				background-color: #AAA;
+			}
+			form
+			{
+				margin: 10% auto;
+				width: 550px;
+				padding: 1em;
+				font-family: Sans-serif;
+				background-color: white;
+				font-family: Century Gothic;
+			}
+			labels{
+				width: 45%;
+				text-align: left;
+			}
+			#dialog{
+				width:200px;
+				height: 200px;
+				background-color: white;
+				border: 1px solid black;
+			}
+			#submit, #reset{
+				background-color: #999;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius:6px;
+				color: #fff;
+				font-family: Century Gothic;
+				font-size: 1em;
+				padding: .5em;
+				cursor: pointer;
+				border:none;
+			}
+			#submit:hover, #reset:hover{
+				background-color: rgb(144,14,63);
+			}
+			textarea
+			{
+				resize: none;
+			}
+			.errors{
+				color: red;
+				font-size: .8em;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			
+			<form name = "subscription_form" method = "get" action = "notify.html">
+				<h3>Subscription Form</h3>
+				<label for="fName" autofocus >First Name: </label><br>
+				<input type="text" id="fName" name = "fName" placeholder = "First Name" autofocus></input>
+				<span class = "errors"></span><br>
+				
+				<label for="lName">Last Name: </label><br>
+				<input type="text" id="lName" name = "lName" placeholder = "Last Name"></input>
+				<span class = "errors"></span><br>
+				
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name = "email" placeholder = "Email"></input>
+				<span class = "errors"></span><br>
+				
+				<label for="comments">Comments: </label><br>
+				<textarea rows = "5" cols = "50" id="comments" name = "comments" maxlength = "50" placeholder = "Please enter your comments(Optional)"></textarea><br>
+				
+				<input type = "submit" id = "submit" onclick = "return validate()"></input>
+				<input type = "reset" id = "reset"></input>
+			
+			</form>
+		</main>
+		<footer></footer>
+		<script>
+			function validate(){
+				var fName = document.getElementById("fName");
+				var lName = document.getElementById("lName");
+				var email = document.getElementById("email");
+				var valid = true;
+				var errors = document.getElementsByClassName("errors");
+				
+				
+				if(fName.value == ""){
+					errors[0].innerHTML = "Please enter first name.";
+					fName.border = "red";
+					valid = false;
+				}
+				else{
+					errors[0].innerHTML = "";
+				}
+				if(lName.value == ""){
+					errors[1].innerHTML = "Please enter last name.";
+					valid = false;
+				}
+				else{
+					errors[1].innerHTML = "";
+				}
+				if(email.value == ""){
+					errors[2].innerHTML = "Please enter your email.";
+					valid = false;
+				}
+				else{
+					errors[2].innerHTML = "";
+				}
+				return valid;
+			}
+		</script>
+	</body>
+</html>

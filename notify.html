@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thank you.</title>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<style>
+			body{
+				font-family: Century Gothic;
+				background-color: #AAA;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:visited,a:link,a:active{
+				color: black;
+			}
+			main{
+				background-color: white;
+				margin: 15% auto;
+				border-radius: 1em;
+				-moz-border-radius: 1em;
+				-webkit-border-radius: 1em;
+				width: 40%;
+				padding: 2em;
+			}
+		</style>
+		<script>
+		$(document).ready(function(){
+			$('#dialog').dialog({modal: true,title:'Notice!'});
+		});
+		</script>
+	</head>
+	<body>
+		<main>
+			<h1>Thank you for Subscribing.</h1>
+			<a href = "index.html">Click here to return to the home page.</a>
+		</main>
+		<div id="dialog" title="Basic dialog">
+			<p>Your details have been saved.</p>
+		</div>
+	</body>
+</html>
